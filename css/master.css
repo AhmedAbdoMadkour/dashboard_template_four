@@ -1,0 +1,571 @@
+/* START GLOLE RULES */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+
+/* START COMPONENT */
+.main_header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_header .search {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+
+.main_header .search input {
+    border-style: none;
+    width: 150px;
+}
+
+.main_header img {
+    width: 40px;
+}
+
+.main_header .nofitications {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.main_header .nofitications i {
+    position: relative;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900px;
+    padding-right: 15px;
+}
+
+.main_header .nofitications i::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    top: -8px;
+    right: 4px;
+}
+
+.main_tital {
+    position: relative;
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: 600;
+
+}
+
+.main_tital::after {
+    position: absolute;
+    content: "";
+    width: 130px;
+    height: 3px;
+    background-image: linear-gradient(to right, black 30%, white 30%, white 100%);
+    bottom: 0;
+    left: 10px;
+
+}
+
+/* END COMPONENT */
+/*  END GLOBLE RULES*/
+/* START PAGE */
+.page {
+    background-color: #f1f5f9;
+    min-height: 100vh;
+}
+
+/* END PAGE */
+/* START SIDEBAR */
+.sidebar {
+    background-color: white;
+    box-shadow: 0 0 10px #ddd;
+    padding: 20px;
+    width: 200px;
+}
+
+
+
+.sidebar h3 {
+    position: relative;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar h3::before {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: black;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.sidebar h3::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    border: 3px solid white;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sidebar ul li {
+    padding: 10px;
+    transition: .5s;
+    margin-bottom: 7px;
+}
+
+.sidebar ul li i {
+    font-family: "Font Awesome 6 Free";
+    padding-right: 20px;
+}
+
+
+
+.sidebar ul li a {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: black;
+
+}
+
+.sidebar ul .active,
+.sidebar ul li:hover {
+    background-color: #f6f6f6;
+    border-radius: 7px;
+    transition: .5s;
+}
+
+
+
+/* END SIDEBAR */
+/* STAET CONTENT */
+.content {
+    flex: 1;
+}
+
+.boxs_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 40px;
+
+}
+
+.box_welcome {
+    background-color: #eee;
+    border-radius: 15px;
+    margin: 0 10px;
+}
+
+.boxs_content .box_welcome .text_welcom {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+
+}
+
+.boxs_content .tital_box {
+    text-transform: capitalize;
+}
+
+.boxs_content .tital_box span {
+    color: #777;
+}
+
+.boxs_content .box_welcome .text_welcom img {
+    width: 200px;
+
+}
+
+
+
+.boxs_content .box_welcome .card_welcom {
+    position: relative;
+    background-color: white;
+    padding: 80px 0;
+    border-radius: 0 0 15px 15px;
+}
+
+.boxs_content .box_welcome .card_welcom img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -25px;
+    border: 4px solid white;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+
+.boxs_content .box_welcome .card_welcom .data {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    text-align: center;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.boxs_content .box_welcome .card_welcom .data .box_data span {
+    color: #777;
+    font-size: 14px;
+}
+
+.boxs_content .box_welcome .card_welcom a {
+    text-align: end;
+    padding: 6px 18px;
+    border-radius: 5px;
+    background-color: #0075ff;
+    color: white;
+    position: absolute;
+    right: 15px;
+    margin-top: 20px;
+
+}
+
+.box_quick {
+    position: relative;
+    background-color: white;
+    margin: 0 10px;
+    border-radius: 10px;
+
+}
+
+.box_quick .tital_box {
+    padding: 20px;
+}
+
+.box_quick .card_quick {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+
+.box_quick .card_quick input {
+    background-color: #eee;
+    border-color: transparent;
+    text-transform: capitalize;
+    margin: 10px 20px;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.box_quick .card_quick textarea {
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #eee;
+    padding: 7px;
+    text-transform: capitalize;
+    margin: 0 20px;
+    font-size: 14px;
+}
+
+.box_quick>input {
+    position: absolute;
+    background-color: #0075ff;
+    color: white;
+    right: 12px;
+    border: none;
+    padding: 6px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 28px;
+}
+
+/* START YRALY TARGETS  */
+.yearly_targets {
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.yearly_targets .tital_box {
+    padding: 20px;
+}
+
+.yearly_targets .box_target {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.yearly_targets .box_target i {
+    width: 80px;
+    height: 80px;
+    background-color: #0077ff60;
+    color: #0075ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.yearly_targets .box_target .data_target {
+    position: relative;
+    flex: 1;
+    padding: 0 10px;
+}
+
+.yearly_targets .box_target .data_target h4 {
+    margin: 0;
+    text-transform: capitalize;
+    color: #777;
+    font-weight: normal;
+}
+
+.yearly_targets .box_target .data_target p {
+    font-weight: bold;
+}
+
+.yearly_targets .box_target .data_target .rate {
+    display: flex;
+    position: relative;
+    height: 3px;
+    width: 100%;
+
+}
+
+
+.yearly_targets .box_target .data_target .rate:before {
+    position: absolute;
+    content: "80%";
+    background-color: #0075ff;
+    border-radius: 5px;
+    color: white;
+    top: -35px;
+    left: 76%;
+    padding: 4px 6px;
+    font-size: 12px;
+
+}
+
+
+.yearly_targets .box_target .data_target .rate::after {
+    position: absolute;
+    content: "";
+    border-color: #0075ff transparent transparent transparent;
+    border-width: 11px;
+    border-style: solid;
+    top: -15px;
+    left: 77.5%;
+}
+
+
+.yearly_targets .box_target .data_target span span {
+    height: 100%;
+}
+
+.bg_blue {
+    background-color: #0077ff70;
+    color: #0075ff;
+}
+
+
+.bg_orange {
+    background-color: #f59f0b8f;
+    color: #f59f0b;
+}
+
+.bg_green {
+    background-color: #22c55ea2;
+    color: #22c55e;
+
+}
+
+/* END YEARLY TARGETS */
+/* START STATISTICS */
+.statistics {
+    background-color: white;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.statistics .tital_box {
+    padding: 20px;
+}
+
+.statistics .boxs_statistics {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 0 20px;
+}
+
+.statistics .boxs_statistics .box_statistics {
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.statistics .boxs_statistics .box_statistics i {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.statistics .boxs_statistics .box_statistics:first-of-type i {
+    color: #f59f0b;
+}
+
+.statistics .boxs_statistics .box_statistics:nth-of-type(2) i {
+    color: #0075ff;
+}
+
+.statistics .boxs_statistics .box_statistics:nth-of-type(3) i {
+    color: #22c55e;
+}
+
+.statistics .boxs_statistics .box_statistics:nth-of-type(4) i {
+    color: #f44336;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+}
+
+.statistics .boxs_statistics .box_statistics h4 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+.statistics .boxs_statistics .box_statistics span {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    color: #ccc;
+    text-transform: capitalize;
+}
+
+/* END STATISTICS */
+.latest_news {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.latest_news h2 {
+    text-transform: capitalize;
+    margin: 10px 30px;
+}
+
+.latest_news .box_news {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (max-width:767px) {
+    .latest_news .box_news {
+        flex-direction: column;
+    }
+}
+
+.latest_news .box_news img {
+    width: 100px;
+    border-radius: 7px;
+}
+
+.latest_news .box_news .text_news {
+    text-transform: capitalize;
+}
+
+.latest_news .box_news .text_news p {
+    font-weight: bold;
+    margin: 2px 0;
+}
+
+.latest_news .box_news .text_news span {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.latest_news .box_news .days {
+    padding: 6px;
+    background-color: #eee;
+    font-size: 13px;
+    /* font-weight: bold; */
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+/* END CONTENT */
+
+/* START MEDIA */
+@media (max-width:767px) {
+    .sidebar {
+        width: 70px;
+        padding: 15px;
+    }
+
+    .sidebar h3 {
+        font-size: 13px;
+    }
+
+    .sidebar h3::after,
+    .sidebar h3::before,
+    .sidebar ul li a span {
+        display: none;
+    }
+
+    .boxs_content {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .boxs_content .box_welcome .card_welcom .data {
+        flex-direction: column;
+    }
+
+    .boxs_content .box_welcome .card_welcom img {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* END MEDIA */

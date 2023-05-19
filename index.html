@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK FRAMEWORK   -->
+    <link rel="stylesheet" href="css/framework.css">
+    <!-- LINK RENDER NORMALIZE CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- LINK FONTAWSOME ICONS -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- LINK FONT GOOGALS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;800;900;1000&family=Open+Sans:wght@300;400;500;600;700;800&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- LINK MASTER CSS STYLE -->
+    <link rel="stylesheet" href="css/master.css">
+    <title>DashBoard</title>
+</head>
+
+<body>
+    <div class="page d-flex">
+        <div class="sidebar">
+            <h3>elzero</h3>
+            <ul>
+                <li class="active"><a href="index.html"><i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>dashboard</span></a></li>
+                <li><a href="settings.html"><i class="fa-solid fa-gear fa-fw"></i><span>settings</span></a></li>
+                <li><a href="profiles.html"><i class="fa-thin fa-user fa-fw"></i><span>profile</span></a></li>
+                <li><a href="projects.html"><i class="fa-solid fa-diagram-project fa-fw"></i><span>projects</span></a>
+                </li>
+                <li><a href="courses.html"><i class="fa-solid fa-graduation-cap fa-fw"></i><span>courses</span></a></li>
+                <li><a href="friends.html"><i class="fa-light fa-circle-user fa-fw"></i><span>friends</span></a></li>
+                <li><a href="files.html"><i class="fa-thin fa-file fa-fw"></i><span>files</span></a></li>
+                <li><a href="plans.html"><i class="fa-light fa-credit-card fa-fw"></i><span>plans</span></a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="main_header">
+                <div class="search">
+                    <input type="search" placeholder="Type a keyword">
+                </div>
+                <div class="nofitications">
+                    <i class="fa-light fa-bell"></i>
+                    <img src="images/avatar.png" alt="" sizes="" srcset="">
+                </div>
+            </div>
+            <h1 class="main_tital">dashboard</h1>
+            <!-- START CONTENT -->
+            <div class="boxs_content">
+                <!-- START WELCOM -->
+                <div class="box_welcome">
+                    <div class="text_welcom">
+                        <div class="tital_box">
+                            <h3>welcom</h3>
+                            <span>elzero</span>
+                        </div>
+                        <img src="images/welcome.png" alt="">
+                    </div>
+                    <div class="card_welcom">
+                        <img src="images/avatar.png" alt="">
+                        <div class="data">
+                            <div class="box_data">
+                                <h4>ahmed madkour</h4>
+                                <span>developer</span>
+                            </div>
+                            <div class="box_data">
+                                <h4>80</h4>
+                                <span>projects</span>
+                            </div>
+                            <div class="box_data">
+                                <h4>$8500</h4>
+                                <span>earned</span>
+                            </div>
+                        </div>
+                        <a href="profile.html">profile</a>
+                    </div>
+                </div>
+                <!-- END WELCOM -->
+                <!-- START QUICK -->
+                <div class="box_quick">
+                    <div class="tital_box">
+                        <h3>quick draft</h3>
+                        <span>write a draft for your ideas</span>
+                    </div>
+                    <div class="card_quick">
+                        <input type="text" name="" id="" placeholder="title">
+                        <textarea name="thought" id="" cols="30" rows="10" placeholder="thought"></textarea>
+                    </div>
+                    <input type="submit" value="save">
+                </div>
+                <!-- END QUICK -->
+                <!-- START YEARLY TARGETS -->
+                <div class="yearly_targets">
+                    <div class="tital_box">
+                        <h3>yearly targets</h3>
+                        <span>targets of the year</span>
+                    </div>
+                    <div class="boxs_targets">
+                        <div class="box_target">
+                            <i class="fa-solid fa-dollar-sign fa-fw bg_blue"></i>
+                            <div class="data_target">
+                                <h4>money</h4>
+                                <p>$20.000</p>
+                                <span class="rate bg_blue">
+                                    <span style="width:80%" class="bg_blue"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="box_target">
+                            <i class="fa-solid fa-code fa-fw bg_orange"></i>
+                            <div class="data_target">
+                                <h4>projects</h4>
+                                <p>24</p>
+                                <span class="rate bg_orange">
+                                    <span style="width:55%" class="bg_orange"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="box_target">
+                            <i class="fa-solid fa-user fa-fw bg_green""></i>
+                            <div class=" data_target">
+                                <h4>team</h4>
+                                <p>12</p>
+                                <span class="rate bg_green">
+                                    <span style="width:75%" class="bg_green"></span>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END YEARLY TARGETS -->
+            <!-- START STATISTICS -->
+            <div class="statistics">
+                <div class="tital_box">
+                    <h3>tickets statistics</h3>
+                    <span>everything about support tickets</span>
+                </div>
+                <div class="boxs_statistics">
+                    <div class="box_statistics">
+                        <i class="fa-sharp fa-regular fa-rectangle-list"></i>
+                        <h4>2500</h4>
+                        <span>total</span>
+                    </div>
+                    <div class="box_statistics">
+                        <i class="fa-solid fa-spinner"></i>
+                        <h4>500</h4>
+                        <span>pending</span>
+                    </div>
+                    <div class="box_statistics">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <h4>1900</h4>
+                        <span>closed</span>
+                    </div>
+                    <div class="box_statistics">
+                        <i class="fa-regular fa-square-xmark"></i>
+                        <h4>100</h4>
+                        <span>deleted</span>
+                    </div>
+                </div>
+            </div>
+            <!-- END STATISTICS -->
+            <!-- START LATEST NEWS -->
+            <div class="latest_news">
+                <h2 class="tital">latest news</h2>
+                <div class="box_news">
+                    <img src="images/news-01.png" alt="">
+                    <div class="text_news">
+                        <p>created SASS section</p>
+                        <span>new SASS examples & tutorials</span>
+                    </div>
+                    <span class="days">3 days ago</span>
+                </div>
+                <div class="box_news">
+                    <img src="images/news-02.png" alt="">
+                    <div class="text_news">
+                        <p>changed the design</p>
+                        <span>a brand new website design</span>
+                    </div>
+                    <span class="days">5 days ago</span>
+                </div>
+                <div class="box_news">
+                    <img src="images/news-03.png" alt="">
+                    <div class="text_news">
+                        <p>team increased</p>
+                        <span>3 developers joined the team</span>
+                    </div>
+                    <span class="days">7 days ago</span>
+                </div>
+                <div class="box_news">
+                    <img src="images/news-04.png" alt="">
+                    <div class="text_news">
+                        <p>added payment gateway</p>
+                        <span>many new payment gateway added</span>
+                    </div>
+                    <span class="days">9 days ago</span>
+                </div>
+            </div>
+            <!-- END LATEST NEWS -->
+            <!-- START TASKS -->
+            <div class="latest_tasks">
+                <div class="box_tasks">
+                    <div class="text_tasks">
+                        <p>python one new video</p>
+                        <span>record python create exe project</span>
+                    </div>
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+                <div class="box_tasks">
+                    <div class="text_tasks">
+                        <p>write article</p>
+                        <span>write low level vs high level language</span>
+                    </div>
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+                <div class="box_tasks">
+                    <div class="text_tasks">
+                        <p>finish project</p>
+                        <span>publish academy programming project</span>
+                    </div>
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+                <div class="box_tasks">
+                    <div class="text_tasks">
+                        <p>attend the meeting</p>
+                        <span>attend the project business analysis meeting</span>
+                    </div>
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+                <div class="box_tasks">
+                    <div class="text_tasks">
+                        <p>finish lesson</p>
+                        <span>finish teaching flex box</span>
+                    </div>
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <!-- END TASKS -->
+            <!-- START TOP SEARCH ITEMS-->
+            <div class="top_search">
+                <div class="box_search">
+                    <p>keyword</p>
+                    <span>search count</span>
+                </div>
+                <div class="box_search">
+                    <p>programming</p>
+                    <span>220</span>
+                </div>
+                <div class="box_search">
+                    <p>javascript</p>
+                    <span>180</span>
+                </div>
+                <div class="box_search">
+                    <p>php</p>
+                    <span>160</span>
+                </div>
+                <div class="box_search">
+                    <p>code</p>
+                    <span>145</span>
+                </div>
+                <div class="box_search">
+                    <p>design</p>
+                    <span>110</span>
+                </div>
+                <div class="box_search">
+                    <p>logic</p>
+                    <span>95</span>
+                </div>
+            </div>
+            <!-- END TOP SEARCH ITEMS -->
+            <!-- START LATEST UPLOADS -->
+            <div class="latest_uploads">
+                <div class="box_uploads">
+                    <img src="images/pdf.svg" alt="">
+                    <div class="text_uploads">
+                        <p>my-file.pdf</p>
+                        <span>elzero</span>
+                    </div>
+                    <span>2.9mb</span>
+                </div>
+                <div class="box_uploads">
+                    <img src="images/avi.svg" alt="">
+                    <div class="text_uploads">
+                        <p>my-video-file.avi</p>
+                        <span>admin</span>
+                    </div>
+                    <span>4.9mb</span>
+                </div>
+                <div class="box_uploads">
+                    <img src="images/psd.svg" alt="">
+                    <div class="text_uploads">
+                        <p>my-psd-file.pdf</p>
+                        <span>osama</span>
+                    </div>
+                    <span>4.5mb</span>
+                </div>
+                <div class="box_uploads">
+                    <img src="images/zip.svg" alt="">
+                    <div class="text_uploads">
+                        <p>my-zip-file.pdf</p>
+                        <span>user</span>
+                    </div>
+                    <span>8.9mb</span>
+                </div>
+                <div class="box_uploads">
+                    <img src="images/dll.svg" alt="">
+                    <div class="text_uploads">
+                        <p>my-dll-file.pdf</p>
+                        <span>admin</span>
+                    </div>
+                    <span>4.9mb</span>
+                </div>
+                <div class="box_uploads">
+                    <img src="images/eps.svg" alt="">
+                    <div class="text_uploads">
+                        <p>my-eps-file.pdf</p>
+                        <span>designer</span>
+                    </div>
+                    <span>8.9mb</span>
+                </div>
+            </div>
+            <!-- END LATEST UPLOADS -->
+        </div>
+        <!-- END CONTENT -->
+    </div>
+    </div>
+</body>
+
+</html>
